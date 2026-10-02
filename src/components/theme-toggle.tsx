@@ -1,40 +1,72 @@
-"use client"
+"use client";
 
-import * as React from "react"
-import { Moon, Sun } from "lucide-react"
-import { useTheme } from "next-themes"
+import { useSyncExternalStore } from "react";
+import { Moon, Sun } from "lucide-react";
+import { useTheme } from "next-themes";
+import { cn } from "@/lib/utils";
 
-import { Button } from "@/components/ui/button"
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu"
+type ThemeToggleProps = {
+  className?: string;
+  /** Compact icon button for navbars */
+  variant?: "icon" | "pill";
+};
 
-export function ModeToggle() {
-  const { setTheme } = useTheme()
+export function ThemeToggle({ className, variant = "icon" }: ThemeToggleProps) {
+  const { resolvedTheme, setTheme } = useTheme();
+  const mounted = useSyncExternalStore(
+    () => () => {},
+    () => true,
+    () => false,
+  );
+
+  const isDark = resolvedTheme === "dark";
+
+  function toggle() {
+    setTheme(isDark ? "light" : "dark");
+  }
+
+  if (!mounted) {
+    return (
+      <span
+        aria-hidden
+        className={cn(
+          variant === "pill"
+            ? "inline-flex h-9 w-[4.5rem] rounded-full bg-muted"
+            : "inline-flex size-9 rounded-full bg-muted",
+          className,
+        )}
+      />
+    );
+  }
+
+  if (variant === "pill") {
+    return (
+      <button
+        type="button"
+        onClick={toggle}
+        aria-label={isDark ? "Switch to light mode" : "Switch to dark mode"}
+        className={cn(
+          "inline-flex h-9 items-center gap-1.5 rounded-full border border-border bg-secondary px-3 text-xs font-medium text-foreground transition-colors hover:bg-muted",
+          className,
+        )}
+      >
+        {isDark ? <Sun className="size-3.5" /> : <Moon className="size-3.5" />}
+        {isDark ? "Light" : "Dark"}
+      </button>
+    );
+  }
 
   return (
-    <DropdownMenu>
-      <DropdownMenuTrigger >
-        <Button variant="outline" size="icon">
-          <Sun className="h-[1.2rem] w-[1.2rem] scale-100 rotate-0 transition-all dark:scale-0 dark:-rotate-90" />
-          <Moon className="absolute h-[1.2rem] w-[1.2rem] scale-0 rotate-90 transition-all dark:scale-100 dark:rotate-0" />
-          <span className="sr-only">Toggle theme</span>
-        </Button>
-      </DropdownMenuTrigger>
-      <DropdownMenuContent align="end">
-        <DropdownMenuItem onClick={() => setTheme("light")}>
-          Light
-        </DropdownMenuItem>
-        <DropdownMenuItem onClick={() => setTheme("dark")}>
-          Dark
-        </DropdownMenuItem>
-        <DropdownMenuItem onClick={() => setTheme("system")}>
-          System
-        </DropdownMenuItem>
-      </DropdownMenuContent>
-    </DropdownMenu>
-  )
+    <button
+      type="button"
+      onClick={toggle}
+      aria-label={isDark ? "Switch to light mode" : "Switch to dark mode"}
+      className={cn(
+        "inline-flex size-9 items-center justify-center rounded-full border border-border bg-secondary text-foreground transition-colors hover:bg-muted",
+        className,
+      )}
+    >
+      {isDark ? <Sun className="size-4" /> : <Moon className="size-4" />}
+    </button>
+  );
 }
