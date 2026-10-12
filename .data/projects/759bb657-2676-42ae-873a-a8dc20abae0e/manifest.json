@@ -1,0 +1,466 @@
+[
+  {
+    "relativePath": "next.config.ts",
+    "sizeBytes": 396
+  },
+  {
+    "relativePath": "package.json",
+    "sizeBytes": 1355
+  },
+  {
+    "relativePath": "src/app/about/page.tsx",
+    "sizeBytes": 196
+  },
+  {
+    "relativePath": "src/app/admin/AdminDashboardClient.tsx",
+    "sizeBytes": 3301
+  },
+  {
+    "relativePath": "src/app/admin/page.tsx",
+    "sizeBytes": 524
+  },
+  {
+    "relativePath": "src/app/api/send-appointment-email/route.ts",
+    "sizeBytes": 1516
+  },
+  {
+    "relativePath": "src/app/appointments/page.tsx",
+    "sizeBytes": 7239
+  },
+  {
+    "relativePath": "src/app/dashboard/page.tsx",
+    "sizeBytes": 504
+  },
+  {
+    "relativePath": "src/app/layout.tsx",
+    "sizeBytes": 1318
+  },
+  {
+    "relativePath": "src/app/page.tsx",
+    "sizeBytes": 942
+  },
+  {
+    "relativePath": "src/app/pro/page.tsx",
+    "sizeBytes": 2206
+  },
+  {
+    "relativePath": "src/app/voice/page.tsx",
+    "sizeBytes": 810
+  },
+  {
+    "relativePath": "src/components/Navbar.tsx",
+    "sizeBytes": 3155
+  },
+  {
+    "relativePath": "src/components/UserSync.tsx",
+    "sizeBytes": 612
+  },
+  {
+    "relativePath": "src/components/admin/AddDoctorDialog.tsx",
+    "sizeBytes": 5427
+  },
+  {
+    "relativePath": "src/components/admin/AdminStats.tsx",
+    "sizeBytes": 2998
+  },
+  {
+    "relativePath": "src/components/admin/DoctorsManagement.tsx",
+    "sizeBytes": 5012
+  },
+  {
+    "relativePath": "src/components/admin/EditDoctorDialog.tsx",
+    "sizeBytes": 5164
+  },
+  {
+    "relativePath": "src/components/admin/RecentAppointments.tsx",
+    "sizeBytes": 3819
+  },
+  {
+    "relativePath": "src/components/appointments/AppointmentConfirmationModal.tsx",
+    "sizeBytes": 3909
+  },
+  {
+    "relativePath": "src/components/appointments/BookingConfirmationStep.tsx",
+    "sizeBytes": 3210
+  },
+  {
+    "relativePath": "src/components/appointments/DoctorCardsLoading.tsx",
+    "sizeBytes": 1482
+  },
+  {
+    "relativePath": "src/components/appointments/DoctorInfo.tsx",
+    "sizeBytes": 750
+  },
+  {
+    "relativePath": "src/components/appointments/DoctorSelectionStep.tsx",
+    "sizeBytes": 3579
+  },
+  {
+    "relativePath": "src/components/appointments/ProgressSteps.tsx",
+    "sizeBytes": 1261
+  },
+  {
+    "relativePath": "src/components/appointments/TimeSelectionStep.tsx",
+    "sizeBytes": 4891
+  },
+  {
+    "relativePath": "src/components/dashboard/ActivityOverview.tsx",
+    "sizeBytes": 307
+  },
+  {
+    "relativePath": "src/components/dashboard/DentalHealthOverview.tsx",
+    "sizeBytes": 3094
+  },
+  {
+    "relativePath": "src/components/dashboard/MainActions.tsx",
+    "sizeBytes": 4664
+  },
+  {
+    "relativePath": "src/components/dashboard/NextAppointment.tsx",
+    "sizeBytes": 4005
+  },
+  {
+    "relativePath": "src/components/dashboard/NoNextAppointments.tsx",
+    "sizeBytes": 1054
+  },
+  {
+    "relativePath": "src/components/dashboard/WelcomeSection.tsx",
+    "sizeBytes": 1459
+  },
+  {
+    "relativePath": "src/components/emails/AppointmentConfirmationEmail.tsx",
+    "sizeBytes": 4735
+  },
+  {
+    "relativePath": "src/components/landing/CTA.tsx",
+    "sizeBytes": 4104
+  },
+  {
+    "relativePath": "src/components/landing/Footer.tsx",
+    "sizeBytes": 2895
+  },
+  {
+    "relativePath": "src/components/landing/Header.tsx",
+    "sizeBytes": 1866
+  },
+  {
+    "relativePath": "src/components/landing/Hero.tsx",
+    "sizeBytes": 6303
+  },
+  {
+    "relativePath": "src/components/landing/HowItWorks.tsx",
+    "sizeBytes": 7236
+  },
+  {
+    "relativePath": "src/components/landing/PricingSection.tsx",
+    "sizeBytes": 10428
+  },
+  {
+    "relativePath": "src/components/landing/WhatToAsk.tsx",
+    "sizeBytes": 7969
+  },
+  {
+    "relativePath": "src/components/providers/TanStackProvider.tsx",
+    "sizeBytes": 1624
+  },
+  {
+    "relativePath": "src/components/ui/accordion.tsx",
+    "sizeBytes": 2598
+  },
+  {
+    "relativePath": "src/components/ui/alert-dialog.tsx",
+    "sizeBytes": 5272
+  },
+  {
+    "relativePath": "src/components/ui/alert.tsx",
+    "sizeBytes": 2048
+  },
+  {
+    "relativePath": "src/components/ui/aspect-ratio.tsx",
+    "sizeBytes": 403
+  },
+  {
+    "relativePath": "src/components/ui/attachment.tsx",
+    "sizeBytes": 6105
+  },
+  {
+    "relativePath": "src/components/ui/avatar.tsx",
+    "sizeBytes": 3038
+  },
+  {
+    "relativePath": "src/components/ui/badge.tsx",
+    "sizeBytes": 1925
+  },
+  {
+    "relativePath": "src/components/ui/breadcrumb.tsx",
+    "sizeBytes": 2586
+  },
+  {
+    "relativePath": "src/components/ui/bubble.tsx",
+    "sizeBytes": 4809
+  },
+  {
+    "relativePath": "src/components/ui/button-group.tsx",
+    "sizeBytes": 2480
+  },
+  {
+    "relativePath": "src/components/ui/button.tsx",
+    "sizeBytes": 3240
+  },
+  {
+    "relativePath": "src/components/ui/calendar.tsx",
+    "sizeBytes": 8268
+  },
+  {
+    "relativePath": "src/components/ui/card.tsx",
+    "sizeBytes": 2630
+  },
+  {
+    "relativePath": "src/components/ui/carousel.tsx",
+    "sizeBytes": 5611
+  },
+  {
+    "relativePath": "src/components/ui/chart.tsx",
+    "sizeBytes": 10501
+  },
+  {
+    "relativePath": "src/components/ui/checkbox.tsx",
+    "sizeBytes": 1357
+  },
+  {
+    "relativePath": "src/components/ui/collapsible.tsx",
+    "sizeBytes": 658
+  },
+  {
+    "relativePath": "src/components/ui/combobox.tsx",
+    "sizeBytes": 9031
+  },
+  {
+    "relativePath": "src/components/ui/command.tsx",
+    "sizeBytes": 5005
+  },
+  {
+    "relativePath": "src/components/ui/context-menu.tsx",
+    "sizeBytes": 8035
+  },
+  {
+    "relativePath": "src/components/ui/dialog.tsx",
+    "sizeBytes": 4075
+  },
+  {
+    "relativePath": "src/components/ui/direction.tsx",
+    "sizeBytes": 103
+  },
+  {
+    "relativePath": "src/components/ui/drawer.tsx",
+    "sizeBytes": 11356
+  },
+  {
+    "relativePath": "src/components/ui/dropdown-menu.tsx",
+    "sizeBytes": 8736
+  },
+  {
+    "relativePath": "src/components/ui/empty.tsx",
+    "sizeBytes": 2397
+  },
+  {
+    "relativePath": "src/components/ui/field.tsx",
+    "sizeBytes": 6017
+  },
+  {
+    "relativePath": "src/components/ui/hover-card.tsx",
+    "sizeBytes": 1855
+  },
+  {
+    "relativePath": "src/components/ui/input-group.tsx",
+    "sizeBytes": 5264
+  },
+  {
+    "relativePath": "src/components/ui/input-otp.tsx",
+    "sizeBytes": 2547
+  },
+  {
+    "relativePath": "src/components/ui/input.tsx",
+    "sizeBytes": 1040
+  },
+  {
+    "relativePath": "src/components/ui/item.tsx",
+    "sizeBytes": 4860
+  },
+  {
+    "relativePath": "src/components/ui/kbd.tsx",
+    "sizeBytes": 837
+  },
+  {
+    "relativePath": "src/components/ui/label.tsx",
+    "sizeBytes": 518
+  },
+  {
+    "relativePath": "src/components/ui/marker.tsx",
+    "sizeBytes": 1948
+  },
+  {
+    "relativePath": "src/components/ui/menubar.tsx",
+    "sizeBytes": 8181
+  },
+  {
+    "relativePath": "src/components/ui/message-scroller.tsx",
+    "sizeBytes": 4062
+  },
+  {
+    "relativePath": "src/components/ui/message.tsx",
+    "sizeBytes": 2232
+  },
+  {
+    "relativePath": "src/components/ui/native-select.tsx",
+    "sizeBytes": 2093
+  },
+  {
+    "relativePath": "src/components/ui/navigation-menu.tsx",
+    "sizeBytes": 7393
+  },
+  {
+    "relativePath": "src/components/ui/pagination.tsx",
+    "sizeBytes": 2864
+  },
+  {
+    "relativePath": "src/components/ui/popover.tsx",
+    "sizeBytes": 2574
+  },
+  {
+    "relativePath": "src/components/ui/progress.tsx",
+    "sizeBytes": 1740
+  },
+  {
+    "relativePath": "src/components/ui/radio-group.tsx",
+    "sizeBytes": 1653
+  },
+  {
+    "relativePath": "src/components/ui/resizable.tsx",
+    "sizeBytes": 1671
+  },
+  {
+    "relativePath": "src/components/ui/scroll-area.tsx",
+    "sizeBytes": 1624
+  },
+  {
+    "relativePath": "src/components/ui/select.tsx",
+    "sizeBytes": 6655
+  },
+  {
+    "relativePath": "src/components/ui/separator.tsx",
+    "sizeBytes": 545
+  },
+  {
+    "relativePath": "src/components/ui/sheet.tsx",
+    "sizeBytes": 4433
+  },
+  {
+    "relativePath": "src/components/ui/sidebar.tsx",
+    "sizeBytes": 21633
+  },
+  {
+    "relativePath": "src/components/ui/skeleton.tsx",
+    "sizeBytes": 275
+  },
+  {
+    "relativePath": "src/components/ui/slider.tsx",
+    "sizeBytes": 1874
+  },
+  {
+    "relativePath": "src/components/ui/spinner.tsx",
+    "sizeBytes": 322
+  },
+  {
+    "relativePath": "src/components/ui/switch.tsx",
+    "sizeBytes": 1707
+  },
+  {
+    "relativePath": "src/components/ui/table.tsx",
+    "sizeBytes": 2402
+  },
+  {
+    "relativePath": "src/components/ui/tabs.tsx",
+    "sizeBytes": 3497
+  },
+  {
+    "relativePath": "src/components/ui/textarea.tsx",
+    "sizeBytes": 842
+  },
+  {
+    "relativePath": "src/components/ui/toast.tsx",
+    "sizeBytes": 7394
+  },
+  {
+    "relativePath": "src/components/ui/toggle-group.tsx",
+    "sizeBytes": 3183
+  },
+  {
+    "relativePath": "src/components/ui/toggle.tsx",
+    "sizeBytes": 1762
+  },
+  {
+    "relativePath": "src/components/ui/tooltip.tsx",
+    "sizeBytes": 2846
+  },
+  {
+    "relativePath": "src/components/voice/FeatureCards.tsx",
+    "sizeBytes": 4146
+  },
+  {
+    "relativePath": "src/components/voice/ProPlanRequired.tsx",
+    "sizeBytes": 3925
+  },
+  {
+    "relativePath": "src/components/voice/VapiWidget.tsx",
+    "sizeBytes": 9551
+  },
+  {
+    "relativePath": "src/components/voice/WelcomeSection.tsx",
+    "sizeBytes": 1217
+  },
+  {
+    "relativePath": "src/hooks/use-appointment.ts",
+    "sizeBytes": 1565
+  },
+  {
+    "relativePath": "src/hooks/use-doctors.ts",
+    "sizeBytes": 1303
+  },
+  {
+    "relativePath": "src/hooks/use-mobile.ts",
+    "sizeBytes": 565
+  },
+  {
+    "relativePath": "src/lib/actions/appointments.ts",
+    "sizeBytes": 5306
+  },
+  {
+    "relativePath": "src/lib/actions/doctors.ts",
+    "sizeBytes": 3303
+  },
+  {
+    "relativePath": "src/lib/actions/users.ts",
+    "sizeBytes": 809
+  },
+  {
+    "relativePath": "src/lib/prisma.ts",
+    "sizeBytes": 309
+  },
+  {
+    "relativePath": "src/lib/resend.ts",
+    "sizeBytes": 110
+  },
+  {
+    "relativePath": "src/lib/utils.ts",
+    "sizeBytes": 1916
+  },
+  {
+    "relativePath": "src/lib/vapi.ts",
+    "sizeBytes": 101
+  },
+  {
+    "relativePath": "src/middleware.ts",
+    "sizeBytes": 467
+  }
+]
