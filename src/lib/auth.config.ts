@@ -52,7 +52,8 @@ export const authConfig = {
         session.user.id = token.sub;
       }
       if (session.user && typeof token.authProvider === "string") {
-        session.user.authProvider = token.authProvider;
+        (session.user as unknown as { authProvider?: string }).authProvider =
+          token.authProvider;
       }
 
       return session;

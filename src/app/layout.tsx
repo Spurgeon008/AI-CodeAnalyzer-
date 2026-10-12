@@ -27,7 +27,11 @@ export const metadata: Metadata = {
     "An AI Senior developer that understands your codebase - health reports, issues, and chat grounded in your real code.",
 };
 
-export default function RootLayout({ children }: LayoutProps<"/">) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html
       lang="en"

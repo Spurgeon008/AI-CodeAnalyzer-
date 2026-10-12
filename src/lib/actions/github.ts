@@ -26,7 +26,7 @@ async function requireUser() {
   if (!session?.user?.id) {
     redirect("/login");
   }
-  return session.user;
+  return session.user as typeof session.user & { id: string };
 }
 
 /** Link GitHub via Auth.js (same callback URL as login). */
