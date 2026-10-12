@@ -15,7 +15,13 @@ export type GitHubRepo = {
 };
 
 function getAppUrl() {
-  return process.env.AUTH_URL ?? "http://localhost:3000";
+  return (
+    process.env.AUTH_URL?.replace(/\/$/, "") ||
+    process.env.NEXTAUTH_URL?.replace(/\/$/, "") ||
+    process.env.NEXT_PUBLIC_APP_URL?.replace(/\/$/, "") ||
+    process.env.RENDER_EXTERNAL_URL?.replace(/\/$/, "") ||
+    "http://localhost:3000"
+  );
 }
 
 function signState(payload: string): string {

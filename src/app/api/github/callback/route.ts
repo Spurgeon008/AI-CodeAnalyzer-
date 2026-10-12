@@ -4,7 +4,13 @@ import { exchangeGitHubCode, verifyGitHubOAuthState } from "@/lib/github";
 import { NextRequest, NextResponse } from "next/server";
 
 function appUrl(path: string) {
-  return new URL(path, process.env.AUTH_URL ?? "http://localhost:3000");
+  const base =
+    process.env.AUTH_URL?.replace(/\/$/, "") ||
+    process.env.NEXTAUTH_URL?.replace(/\/$/, "") ||
+    process.env.NEXT_PUBLIC_APP_URL?.replace(/\/$/, "") ||
+    process.env.RENDER_EXTERNAL_URL?.replace(/\/$/, "") ||
+    "http://localhost:3000";
+  return new URL(path, base);
 }
 
 export async function GET(request: NextRequest) {

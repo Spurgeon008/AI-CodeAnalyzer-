@@ -35,7 +35,9 @@ export function getPremiumPriceId(): string {
 export function getAppUrl(): string {
   return (
     process.env.AUTH_URL?.replace(/\/$/, "") ||
+    process.env.NEXTAUTH_URL?.replace(/\/$/, "") ||
     process.env.NEXT_PUBLIC_APP_URL?.replace(/\/$/, "") ||
+    process.env.RENDER_EXTERNAL_URL?.replace(/\/$/, "") ||
     "http://localhost:3000"
   );
 }
